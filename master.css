@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+:root,
+[data-theme="light"] {
+  --bck-color: hsl(0, 0%, 90%);
+  --main-color: hsl(0, 0%, 100%);
+  --p-color: hsl(200, 15%, 8%);
+  --h1-color: black;
+}
+
+[data-theme="dark"] {
+  --bck-color: hsl(207, 26%, 17%);
+  --main-color: hsl(209, 23%, 22%);
+  --p-color: hsl(0, 0%, 100%);
+  --h1-color: white;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: var(--bck-color);
+}
+
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--main-color);
+  margin-bottom: 50px;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: var(--h1-color);
+  font-weight: bold;
+}
+
+header .container .switch {
+  cursor: pointer;
+}
+
+section {
+  overflow: hidden;
+}
+
+section .container .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 50px;
+}
+
+section .container .search input {
+  width: 400px;
+  height: auto;
+  padding: 20px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: var(--main-color);
+  color: var(--h1-color);
+  padding-left: 30px;
+}
+
+section .container .search input::-webkit-input-placeholder {
+  color: var(--p-color);
+}
+
+section .container .search input:-ms-input-placeholder {
+  color: var(--p-color);
+}
+
+section .container .search input::-ms-input-placeholder {
+  color: var(--p-color);
+}
+
+section .container .search input::placeholder {
+  color: var(--p-color);
+}
+
+section .container .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+section .container .grid .card {
+  background-color: var(--main-color);
+  width: 100%;
+}
+
+section .container .grid .card img {
+  width: 100%;
+  height: 45%;
+}
+
+section .container .grid .card .text {
+  padding: 15px;
+}
+
+section .container .grid .card .text h1 {
+  margin-bottom: 10px;
+  color: var(--h1-color);
+}
+
+section .container .grid .card .text p {
+  margin-bottom: 5px;
+  color: var(--h1-color);
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section .container .grid .card .text p span {
+  font-weight: 300;
+  margin-left: 5px;
+}
+/*# sourceMappingURL=master.css.map */
